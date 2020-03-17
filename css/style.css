@@ -12576,32 +12576,29 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 #appointment .login-form {
 	display: none;
 }
-body {
-	margin: 0;
-}
 
 /* bottom menu */
 .bottom-menu {
 	overflow: hidden;
-	background-color: #333;
-	opacity: 70%;
 	position: fixed;
-	bottom: 0;	
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;	
+	bottom: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;	
 }
 
 .bottom-menu a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+	color: #ffffff;
+	background-color: #d6622d;
+	opacity: 80%;
 	text-align: center;
 	padding: 18px;
 	text-decoration: none;
 	font-size: 17px;
 }
 
-.bottom-menu:hover {
-	background-color: #290e0e;
+.bottom-menu a:hover {
+	background-color: #d6622d;
 	opacity: 100%;
 }
