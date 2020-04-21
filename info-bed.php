@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>Info Bed</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600i,700,700i%7CNunito:300,500,900">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+  <style>
+    .color-black {
+      color: black
+    }
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--sidebar-->
+      <div class="navbar-collapse navigation">
+        <ul class="float-menu hidden-xs hidden-sm">
+          <li class="content shadow">
+            <a href="https://wa.me/6285932227018">
+              <img src="images/svg/ambulance-solid.svg" class="img-responsive" height="50" width="50">
+              <div class="text">
+                Layanan <br>
+                Gawat Darurat <br>
+                085932227018
+              </div>
+            </a>
+          </li>
+          <li class="content shadow">
+            <a href="https://wa.me/6281907007002">
+              <img src="images/svg/plus-square-solid.svg" class="img-responsive" height="50" width="50">
+              <div class="text">
+                Layanan <br>
+                Pendaftaran <br>
+                081907007002
+              </div>
+            </a>
+          </li>
+          <li class="content shadow">
+            <a href="https://wa.me/62370631999">
+              <img src="images/svg/phone-solid.svg" class="img-responsive" height="50" width="50">
+              <div class="text">
+                Telephone Kami <br>
+                0370631999
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+            <span></span></div>
+          <div class="rd-navbar-aside-outer rd-navbar-collapse">
+            <div class="rd-navbar-aside">
+              <ul class="contact-list">
+                <li>
+                  <div class="unit unit-spacing-xs align-items-center">
+                    <div class="unit-left"><span class="icon text-middle fa-phone"></span></div>
+                    <div class="unit-body"><a href="tel:0370-631999">0370-631999</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-spacing-xs align-items-center">
+                    <div class="unit-left"><span class="icon text-middle fa-mobile"></span></div>
+                    <div class="unit-body"><a href="tel:081907007002">081907007002</a></div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="social-list">
+                <li><a href="https://www.facebook.com/RSIAPermataHatiNTB/"><span class="icon fa fa-facebook"></span></a>
+                </li>
+                <li><a href="https://instagram.com/rsiapermatahati "><span class="icon fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand">
+                  <!--Brand--><a class="brand" href="index.html">
+                    <img src="images/ph/logo-new.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">HOME</a>
+                    </li>
+
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">TENTANG KAMI</a>
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Keunggulan</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Profile Perusahaan</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Indikator Mutu</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Patner Kami</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">DOKTER KAMI</a>
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Tim Dokter Kami</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Jadwal Praktek</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Jadwal Vaksinasi</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">TARIF & PAKET PELAYANAN</a>
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Tarif Kamar</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Paket Pelayanan</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Kelengkapan Administrasi</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">HUBUNGI KAMI</a>
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Tanya Jawab</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Detail Kontak</a>
+                        </li>
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Survei Kepuasan</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Breadcrumbs-->
+    <section class="breadcrumbs-custom bg-image context-dark" style="background-image: url(images/breadcrumbs-4.jpg)" data-preset='{"title":"Breadcrumbs","category":"header","reload":false,"id":"breadcrumbs"}'>
+      <div class="container">
+        <div class="row flex-column-reverse">
+          <div class="col-12">
+            <div class="breadcrumbs-custom-title">Ketersediaan Kamar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-sm bg-default">
+      <div class="container">
+        <?php
+        $bedData = file_get_contents(
+          'https://script.google.com/macros/s/AKfycbwjofX41Qll_2LohSzF3Na6SOciJ5g8seAv4UOujgrj62Nb36pO/exec'
+        );
+        $bed = json_decode($bedData, true);
+        ?>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>
+                <h5>Kelas</h5>
+              </th>
+              <th>
+                <h5>Tersedia</h5>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="color-black">
+            <?php foreach ($bed["bed"] as $key => $value) { ?>
+              <tr>
+                <td scope="row">
+                  <?= str_replace("_", " ", (strtoupper($key))) ?>
+                </td>
+                <td>
+                  <?= $value["available"] ?>
+                </td>
+              </tr>
+            <?php } ?>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer class="section footer-classic context-dark">
+      <div class="footer-classic__head">
+        <div class="container">
+          <div class="row row-30 align-items-end justify-content-center">
+            <div class="col-md-8 wow fadeInUp">
+              <form class="rd-form rd-mailform rd-form-inline footer-subscribe-form" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                  <input class="form-input" id="subscribe-form-email-main" type="email" name="email" data-constraints="@Email @Required">
+                  <label class="form-label" for="subscribe-form-email-main">Your E-mail</label>
+                </div>
+                <div class="form-button wow fadeInRight">
+                  <button class="button button-primary" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <ul class="social-list">
+                <li class="wow fadeInUp" data-wow-dalay=".1s"><a href="#"><span class="icon fa fa-linkedin"></span></a>
+                </li>
+                <li class="wow fadeInUp" data-wow-dalay=".2s"><a href="#"><span class="icon fa fa-twitter"></span></a>
+                </li>
+                <li class="wow fadeInUp" data-wow-dalay=".3s"><a href="#"><span class="icon fa fa-facebook"></span></a>
+                </li>
+                <li class="wow fadeInUp" data-wow-dalay=".4s"><a href="#"><span class="icon fa fa-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-classic__body">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-xl-3 order-1 wow fadeInLeft">
+              <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-294x44.png" alt="" width="147" height="22" /><img class="brand-logo-light" src="images/logo-inverse-294x44.png" alt="" width="147" height="22" /></a>
+              <p class="text-style-1">Our medical center offers the widest range of services in the area. We strive to
+                provide our patients with the most high-quality help by top-notch experts in their fields.</p>
+            </div>
+            <div class="col-sm-6 col-xl-3 col-md-3 inset-xl-left-90 order-2">
+              <h6 class="title-decorated wow fadeInUp">Departments</h6>
+              <ul class="footer-nav-list">
+                <li class="wow fadeInUp" data-wow-dalay=".1s"><a href="#">Laboratory Analysis</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".2s"><a href="#">Pediatric</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".3s"><a href="#">Rehabilitation</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".4s"><a href="#">Gynaecological</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".5s"><a href="#">Ophthalmology</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".6s"><a href="#">Cardiac</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-md-6 inset-xl-left-45 order-4 order-xl-3">
+              <h6 class="title-decorated wow fadeInRight">Latest news</h6>
+              <div class="news-thumbnail wow fadeInRight" data-wow-dalay=".2s"><a class="news-thumbnail__media" href="single-blog-post.html"><img src="images/thumbnail-mini-1-102x90.jpg" alt="" width="102" height="90" /></a>
+                <div class="news-thumbnail__caption"><a class="title" href="single-blog-post.html">Aspirin for
+                    prevention</a><span class="date">May 4, 2019</span></div>
+              </div>
+              <div class="news-thumbnail wow fadeInRight" data-wow-dalay=".3s"><a class="news-thumbnail__media" href="single-blog-post.html"><img src="images/thumbnail-mini-2-102x90.jpg" alt="" width="102" height="90" /></a>
+                <div class="news-thumbnail__caption"><a class="title" href="single-blog-post.html">New operating
+                    suites</a><span class="date">March 4, 2019</span></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-2 col-md-3 order-2 order-xl-4">
+              <h6 class="title-decorated wow fadeInUp">Quick Links</h6>
+              <ul class="footer-nav-list">
+                <li class="wow fadeInUp" data-wow-dalay=".1s"><a href="index.html">Home</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".2s"><a href="departments.html">Departments</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".3s"><a href="about-us.html">About Us</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".4s"><a href="blog.html">Blog</a></li>
+                <li class="wow fadeInUp" data-wow-dalay=".5s"><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-classic__aside">
+        <div class="container">
+          <div class="row row-10 flex-column-reverse flex-sm-row">
+            <div class="col-sm-6 text-center text-md-left wow fadeInLeft">
+              <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Medcare</span><span>.&nbsp;</span><span>&nbsp;</span><span>All
+                  rights reserved.</span></p>
+            </div>
+            <div class="col-sm-6 text-center text-md-right wow fadeInRight"><a class="privacy-link" href="privacy-policy.html">Privacy Policy</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by Drel-->
+</body>
+
+</html>
