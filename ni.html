@@ -1,11 +1,16 @@
-.content:hover {
-    margin-left: 120px
-}
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:300,400,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
 
-.content>a>img {
-    width: 50px;
-    float: right;
-    margin-top: 8px
+
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
 
 .content .text {
@@ -19,17 +24,25 @@
     transform: translateY(-45%)
 }
 
-@media (min-width: 768px) {
-    .navigation .float-menu {
-        position: fixed;
-        top: 180px;
-        left: -125px;
-        list-style: none;
-        margin: 0;
-        padding: 0
-    }
+.navigation .float-menu {
+    position: fixed;
+    top: 180px;
+    left: -125px;
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
 
+@media (max-width:767px) {
+    .navigation ul.float-menu>li>a {
+        border-radius: 0;
+        font-size: 14px;
+        text-align: center;
+        background: none;
+        color: #aaa;
+        border-right: 1px solid #ddd
+    }
+}
 
 .navigation .float-menu li {
     width: 190px;
@@ -54,7 +67,18 @@
     opacity: .8
 }
 
-.shadow_side {
+.shadow {
     webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3);
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3)
 }
+
+.content:hover {
+    margin-left: 120px
+}
+
+.content>a>img {
+    width: 50px;
+    float: right;
+    margin-top: 8px
+}
+
