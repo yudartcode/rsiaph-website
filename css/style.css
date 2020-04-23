@@ -7589,7 +7589,7 @@ html.rd-navbar-fixed-linked .page {
 	top: 50%;
 	margin-left: -21px;
 	margin-top: -21px;
-	z-index: 10;
+	z-index: 11;
 	transform-origin: 50%;
 	animation: swiper-preloader-spin 1s steps(12, end) infinite;
 }
@@ -12577,31 +12577,32 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	display: none;
 }
 
-
-
-@media (min-width: 768px) {
-
-	/* bottom menu */
+@media (max-width: 768px){
 	.bottom-menu {
-		overflow: hidden;
-		position: fixed;
-		bottom: 0;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
+		display: none;
 	}
+}
 
-	.bottom-menu a {
-		float: left;
-		display: block;
-		color: #ffffff;
-		opacity: 80%;
-		text-align: center;
-		padding: 18px;
-		text-decoration: none;
-		font-size: 17px;
-	}
+/* bottom menu */
+.bottom-menu {
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
 
-	.bottom-menu a:hover {
-		opacity: 100%;
-	}
+.bottom-menu a {
+	float: left;
+	display: block;
+	color: #ffffff;
+	opacity: 80%;
+	text-align: center;
+	padding: 18px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.bottom-menu a:hover {
+	opacity: 100%;
 }

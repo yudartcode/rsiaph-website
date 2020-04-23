@@ -1,3 +1,9 @@
+@media(max-width: 768px){
+    .navigation .float-menu {
+        display: none;
+    }
+}
+
 .content:hover {
     margin-left: 120px
 }
@@ -19,17 +25,14 @@
     transform: translateY(-45%)
 }
 
-@media (min-width: 768px) {
-    .navigation .float-menu {
-        position: fixed;
-        top: 180px;
-        left: -125px;
-        list-style: none;
-        margin: 0;
-        padding: 0
-    }
+.navigation .float-menu {
+    position: fixed;
+    top: 180px;
+    left: -125px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
 
 .navigation .float-menu li {
     width: 190px;

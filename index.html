@@ -92,11 +92,11 @@
       </div>
 
       <!-- bottom-menu -->
-      <ul class="nav nav-tabs menu-tabs hidden-sm hidden-xs" style="">
+      <!-- <ul class="nav nav-tabs menu-tabs hidden-sm hidden-xs">
         <li> 
-          <a href="https://rs-jih.co.id/find-doctor" target="_link" style=""> 
-            <img src="https://rs-jih.co.id/images/background/find_doctor.png" alt="" class="icon" style=""> 
-            <span class="small-xs" style="">Jadwal Dokter</span> 
+          <a href="#" target="_link"> 
+            <img src="https://rs-jih.co.id/images/background/find_doctor.png" alt="" class="icon">
+            <span class="small-xs">Jadwal Dokter</span> 
           </a> 
         </li>
         <li> 
@@ -111,7 +111,7 @@
             <span class="small-xs">Ketersediaan Kamar</span> 
           </a> 
         </li>
-      </ul>
+      </ul> -->
 
       <div class="rd-navbar-wrap">
         <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
@@ -903,8 +903,8 @@
   </div>
 
   <!-- bottom menu -->
-  <!-- <div class="w-100 d-flex justify-content-center">
-    <div class="bottom-menu">
+  <div class="w-100 d-flex justify-content-center">
+    <div class="bottom-menu" style="z-index: 100;">
       <a style="background-color: #f44336;" href="#"><span class="fa fa-lg fa-percent"></span>
         <strong>Promo</strong></a>
       <a style="background-color: #9c27b0;" href="info-bed.php"><span class="fa fa-lg fa-bed"></span> <strong>Info
@@ -916,7 +916,7 @@
     </div>
   </div>
 
-  <div class="btn-group-fab" role="group" aria-label="FAB Menu">
+  <div class="btn-group-fab" style="z-index: 100;">
     <div>
       <button type="button" class="btn btn-main btn-primary has-tooltip" data-placement="left" title="Menu"> <i
           class="fa fa-bars"></i> </button>
@@ -927,7 +927,7 @@
       <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Download"> <i
           class="fa fa-download"></i> </button>
     </div>
-  </div> -->
+  </div>
 
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
@@ -937,7 +937,7 @@
   <!-- js  -->
   <script>
     $(function () {
-      $('.btn-group-fab').on('click', '.btn', function () {
+      $('.btn-group-fab').on('click', function () {
         $('.btn-group-fab').toggleClass('active');
       });
       $('has-tooltip').tooltip();
