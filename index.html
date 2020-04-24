@@ -59,7 +59,7 @@
       <!--sidebar-->
       <div class="navbar-collapse navigation">
         <ul class="float-menu hidden-xs hidden-sm">
-          <li class="content shadow_side">
+          <li class="content shadow_side" style="background-color: #ef5350;">
             <a href="https://wa.me/6285932227018">
               <img src="images/svg/ambulance-solid.svg" class="img-responsive" height="50" width="50">
               <div class="text">
@@ -69,7 +69,7 @@
               </div>
             </a>
           </li>
-          <li class="content shadow_side">
+          <li class="content shadow_side" style="background-color: #42a5f5;">
             <a href="https://wa.me/6281907007002">
               <img src="images/svg/plus-square-solid.svg" class="img-responsive" height="50" width="50">
               <div class="text">
@@ -79,7 +79,7 @@
               </div>
             </a>
           </li>
-          <li class="content shadow_side">
+          <li class="content shadow_side" style="background-color: #26a69a;">
             <a href="https://wa.me/62370631999">
               <img src="images/svg/phone-solid.svg" class="img-responsive" height="50" width="50">
               <div class="text">
@@ -905,27 +905,58 @@
   <!-- bottom menu -->
   <div class="w-100 d-flex justify-content-center">
     <div class="bottom-menu" style="z-index: 100;">
-      <a style="background-color: #f44336;" href="#"><span class="fa fa-lg fa-percent"></span>
+      <a style="background-color: #66bb6a ;" href="#"><span class="fa fa-lg fa-percent"></span>
         <strong>Promo</strong></a>
-      <a style="background-color: #9c27b0;" href="info-bed.php"><span class="fa fa-lg fa-bed"></span> <strong>Info
+      <a style="background-color: #ffa726;" href="info-bed.php"><span class="fa fa-lg fa-bed"></span> <strong>Info
           Bed</strong></a>
-      <a style="background-color: #009688;" href="#"><span class="fa fa-lg fa-plus-square"></span> <strong>
+      <a style="background-color: #8d6e63;" href="#"><span class="fa fa-lg fa-user-plus"></span> <strong>
           Pendaftaran</strong></a>
-      <a style="background-color: #ff9800;" href="#"><span class="fa fa-lg fa-calendar"></span> <strong> Jadwal
+      <a style="background-color: #78909c;" href="#"><span class="fa fa-lg fa-calendar"></span> <strong> Jadwal
           Dokter</strong></a>
     </div>
   </div>
 
-  <div class="btn-group-fab" style="z-index: 100;">
+  <div class="btn-group-fab" style="z-index: 100;" id="btn-bottom">
     <div>
-      <button type="button" class="btn btn-main btn-primary has-tooltip" data-placement="left" title="Menu"> <i
-          class="fa fa-bars"></i> </button>
-      <button type="button" class="btn btn-sub btn-info has-tooltip" data-placement="left" title="Fullscreen"> <i
-          class="fa fa-arrows-alt"></i> </button>
-      <button type="button" class="btn btn-sub btn-danger has-tooltip" data-placement="left" title="Save"> <i
-          class="fa fa-floppy-o"></i> </button>
-      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Download"> <i
-          class="fa fa-download"></i> </button>
+      <button type="button" class="btn btn-main btn-primary has-tooltip" data-placement="left" title="Menu">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #78909c;">
+        <i class="fa fa-calendar"></i>
+      </button>
+      
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #ffa726;">
+        <i class="fa fa-user-plus"></i>
+      </button>
+
+      <button onclick="window.location.href='info-bed.php'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #8d6e63;">
+        <i class="fa fa-bed"></i>
+      </button>
+
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #f44336;">
+        <i class="fa fa-percent"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="btn-group-fab" style="z-index: 100; right: 90px;" id="btn-side">
+    <div>
+      <button type="button" class="btn btn-main btn-primary has-tooltip" data-placement="left" title="Menu">
+        <i class="fa fa-whatsapp fa-lg"></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/62370631999'" type="button" class="btn btn-sub btn-info has-tooltip" data-placement="left" title="Fullscreen" style="background-color: #26a69a  ;">
+        <i class="fa fa-phone"><a href=""></a></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/6281907007002'" type="button" class="btn btn-sub btn-danger has-tooltip" data-placement="left" title="Save" style="background-color: #42a5f5;">
+        <i class="fa fa-plus-square"></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/6285932227018'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Download" style="background-color: #ef5350;">
+        <i class="fa fa-ambulance"></i>
+      </button>
     </div>
   </div>
 
@@ -937,11 +968,19 @@
   <!-- js  -->
   <script>
     $(function () {
-      $('.btn-group-fab').on('click', function () {
-        $('.btn-group-fab').toggleClass('active');
+      $('#btn-bottom').on('click', function () {
+        $('#btn-bottom').toggleClass('active');
       });
       $('has-tooltip').tooltip();
     });
+
+    $(function () {
+      $('#btn-side').on('click', function () {
+        $('#btn-side').toggleClass('active');
+      });
+      $('has-tooltip').tooltip();
+    });
+    
   </script>
 </body>
 
