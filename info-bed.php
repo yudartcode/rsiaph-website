@@ -7,17 +7,20 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600i,700,700i%7CNunito:300,500,900">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sidebar.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fab.css">
 
   <style>
     .color-black {
       color: black
     }
+
     .ie-panel {
       display: none;
       background: #212121;
@@ -49,10 +52,11 @@
   </div>
   <div class="page">
     <header class="section page-header">
+
       <!--sidebar-->
       <div class="navbar-collapse navigation">
         <ul class="float-menu hidden-xs hidden-sm">
-          <li class="content shadow">
+          <li class="content shadow_side" style="background-color: #ef5350;">
             <a href="https://wa.me/6285932227018">
               <img src="images/svg/ambulance-solid.svg" class="img-responsive" height="50" width="50">
               <div class="text">
@@ -62,7 +66,7 @@
               </div>
             </a>
           </li>
-          <li class="content shadow">
+          <li class="content shadow_side" style="background-color: #42a5f5;">
             <a href="https://wa.me/6281907007002">
               <img src="images/svg/plus-square-solid.svg" class="img-responsive" height="50" width="50">
               <div class="text">
@@ -72,7 +76,7 @@
               </div>
             </a>
           </li>
-          <li class="content shadow">
+          <li class="content shadow_side" style="background-color: #26a69a;">
             <a href="https://wa.me/62370631999">
               <img src="images/svg/phone-solid.svg" class="img-responsive" height="50" width="50">
               <div class="text">
@@ -229,18 +233,16 @@
         </table>
       </div>
     </section>
+
     <!--Footer-->
     <footer class="section footer-classic context-dark">
       <div class="footer-classic__head">
         <div class="container">
           <div class="row row-30 align-items-end justify-content-center">
             <div class="col-md-8 wow fadeInUp">
-              <form class="rd-form rd-mailform rd-form-inline footer-subscribe-form"
-                data-form-output="form-output-global" data-form-type="subscribe" method="post"
-                action="bat/rd-mailform.php">
+              <form class="rd-form rd-mailform rd-form-inline footer-subscribe-form" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
                 <div class="form-wrap">
-                  <input class="form-input" id="subscribe-form-email-main" type="email" name="email"
-                    data-constraints="@Email @Required">
+                  <input class="form-input" id="subscribe-form-email-main" type="email" name="email" data-constraints="@Email @Required">
                   <label class="form-label" for="subscribe-form-email-main">Your E-mail</label>
                 </div>
                 <div class="form-button wow fadeInRight">
@@ -299,21 +301,95 @@
         <div class="container">
           <div class="row row-10 flex-column-reverse flex-sm-row">
             <div class="col-sm-6 text-center text-md-left wow fadeInLeft">
-              <p class="rights"><span>&copy;&nbsp; </span><span
-                  class="copyright-year"></span><span>&nbsp;</span><span>Medcare</span><span>.&nbsp;</span><span>&nbsp;</span><span>All
+              <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Medcare</span><span>.&nbsp;</span><span>&nbsp;</span><span>All
                   rights reserved.</span></p>
             </div>
-            <div class="col-sm-6 text-center text-md-right wow fadeInRight"><a class="privacy-link"
-                href="privacy-policy.html">Privacy Policy</a></div>
+            <div class="col-sm-6 text-center text-md-right wow fadeInRight"><a class="privacy-link" href="privacy-policy.html">Privacy Policy</a></div>
           </div>
         </div>
       </div>
     </footer>
   </div>
+
+  <!-- bottom menu -->
+  <div class="w-100 d-flex justify-content-center">
+    <div class="bottom-menu" style="z-index: 100;">
+      <a style="background-color: #66bb6a ;" href="#"><span class="fa fa-lg fa-percent"></span>
+        <strong>Promo</strong></a>
+      <a style="background-color: #ffa726;" href="info-bed.php"><span class="fa fa-lg fa-bed"></span> <strong>Info
+          Bed</strong></a>
+      <a style="background-color: #8d6e63;" href="#"><span class="fa fa-lg fa-user-plus"></span> <strong>
+          Pendaftaran</strong></a>
+      <a style="background-color: #78909c;" href="#"><span class="fa fa-lg fa-calendar"></span> <strong> Jadwal
+          Dokter</strong></a>
+    </div>
+  </div>
+
+  <div class="btn-group-fab" style="z-index: 100;" id="btn-bottom">
+    <div>
+      <button type="button" class="btn btn-main btn-primary has-tooltip shadow" data-placement="left" title="Menu" style="background-color: #00bcd4; border-color:#00bcd4;">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #78909c;">
+        <i class="fa fa-calendar"></i>
+      </button>
+
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #ffa726;">
+        <i class="fa fa-user-plus"></i>
+      </button>
+
+      <button onclick="window.location.href='info-bed.php'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #8d6e63;">
+        <i class="fa fa-bed"></i>
+      </button>
+
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #f44336;">
+        <i class="fa fa-percent"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="btn-group-fab" style="z-index: 100; right: 90px;" id="btn-side">
+    <div>
+      <button type="button" class="btn btn-main btn-primary has-tooltip shadow" data-placement="left" title="Menu" style="background-color: #25D366; border-color:#25D366;">
+        <i class="fa fa-whatsapp fa-lg"></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/62370631999'" type="button" class="btn btn-sub btn-info has-tooltip" data-placement="left" title="Fullscreen" style="background-color: #26a69a  ;">
+        <i class="fa fa-phone"><a href=""></a></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/6281907007002'" type="button" class="btn btn-sub btn-danger has-tooltip" data-placement="left" title="Save" style="background-color: #42a5f5;">
+        <i class="fa fa-plus-square"></i>
+      </button>
+
+      <button onclick="window.location.href='https://wa.me/6285932227018'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Download" style="background-color: #ef5350;">
+        <i class="fa fa-ambulance"></i>
+      </button>
+    </div>
+  </div>
+
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
   <!--coded by Drel-->
+
+  <!-- js  -->
+  <script>
+    $(function() {
+      $('#btn-bottom').on('click', function() {
+        $('#btn-bottom').toggleClass('active');
+      });
+      $('has-tooltip').tooltip();
+    });
+
+    $(function() {
+      $('#btn-side').on('click', function() {
+        $('#btn-side').toggleClass('active');
+      });
+      $('has-tooltip').tooltip();
+    });
+  </script>
 </body>
 
 </html>
