@@ -7495,10 +7495,28 @@ html.rd-navbar-fixed-linked .page {
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
-	height: auto;
+	height: 700px;
 	width: 100%;
 	/* Fix of Webkit flickering */
 	z-index: 1;
+}
+
+@media (max-width: 575.98px) {
+	.swiper-container {
+		height: 100px;
+	}
+}
+
+@media(max-width: 767.98px) {
+	.swiper-container {
+		height: 300px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.swiper-container {
+		height: 500px;
+	}
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -12577,7 +12595,7 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 	.bottom-menu {
 		display: none;
 	}
