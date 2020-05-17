@@ -199,7 +199,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-sm bg-default">
+    <section class="section section-md bg-default text-center">
       <div class="container">
         <?php
         $bedData = file_get_contents(
@@ -207,30 +207,32 @@
         );
         $bed = json_decode($bedData, true);
         ?>
-        <table class="table table-bordered table-striped">
-          <thead>
-            <tr>
-              <th>
-                <h5>Kelas</h5>
-              </th>
-              <th>
-                <h5>Tersedia</h5>
-              </th>
-            </tr>
-          </thead>
-          <tbody class="color-black">
-            <?php foreach ($bed["bed"] as $key => $value) { ?>
+        <div class="table-custom-responsive">
+          <table class="table-custom table-custom-striped table-custom-primary">
+            <thead>
               <tr>
-                <td scope="row">
-                  <?= str_replace("_", " ", (strtoupper($key))) ?>
-                </td>
-                <td>
-                  <?= $value["available"] ?>
-                </td>
+                <th>
+                  <h5>Kelas</h5>
+                </th>
+                <th>
+                  <h5>Tersedia</h5>
+                </th>
               </tr>
-            <?php } ?>
-          </tbody>
-        </table>
+            </thead>
+            <tbody class="color-black">
+              <?php foreach ($bed["bed"] as $key => $value) { ?>
+                <tr>
+                  <td scope="row">
+                    <?= str_replace("_", " ", (strtoupper($key))) ?>
+                  </td>
+                  <td>
+                    <?= $value["available"] ?>
+                  </td>
+                </tr>
+              <?php } ?>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -320,7 +322,7 @@
           Bed</strong></a>
       <a style="background-color: #8d6e63;" href="#"><span class="fa fa-lg fa-user-plus"></span> <strong>
           Pendaftaran</strong></a>
-      <a style="background-color: #78909c;" href="#"><span class="fa fa-lg fa-calendar"></span> <strong> Jadwal
+      <a style="background-color: #78909c;" href="jadwal-dokter.php"><span class="fa fa-lg fa-calendar"></span> <strong> Jadwal
           Dokter</strong></a>
     </div>
   </div>
