@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/fab.css">
-
+  
+  <link rel="stylesheet" href="css/slide.css">
   <style>
     .ie-panel {
       display: none;
@@ -197,9 +198,8 @@
     </header>
     <!--Intro-->
     <!-- Swiper -->
-    <!-- <div class="container" style="height: 600px;"> -->
-
-    <div class="swiper-container swiper-slider" data-loop="true" data-autoplay="3000">
+    <!-- PC -->
+    <div class="swiper-container swiper-slider pc-slide" data-loop="true" data-autoplay="3000">
       <div class="swiper-wrapper">
         <div class="swiper-slide" data-slide-bg="images/ph/slide/webruanginap.jpg"></div>
         <div class="swiper-slide" data-slide-bg="images/ph/slide/webkehamilan.jpg"></div>
@@ -216,8 +216,26 @@
       <!-- Swiper Scrollbar -->
       <div class="swiper-scrollbar"></div>
     </div>
-    <!-- </div> -->
     <!-- END Swiper -->
+
+    <!-- MOBILE -->
+    <div class="swiper-container swiper-slider mobile-slide" data-loop="true" data-autoplay="3000" style="height: 180px;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-slide-bg="images/ph/slide/mobile/web-rev-1.jpg"></div>
+        <div class="swiper-slide" data-slide-bg="images/ph/slide/mobile/web-rev-2.jpg"></div>
+        <div class="swiper-slide" data-slide-bg="images/ph/slide/mobile/web-rev-3.jpg"></div>
+        <div class="swiper-slide" data-slide-bg="images/ph/slide/mobile/web-rev-4.jpg"></div>
+        <div class="swiper-slide" data-slide-bg="images/ph/slide/mobile/web-rev-5.jpg"></div>
+        <div class="swiper-slide" data-slide-bg="images/ph/slide/mobile/web-rev-6.jpg"></div>
+      </div>
+
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
     <!--Service-creative-->
     <section class="section section-sm section-negative bg-default">
       <div class="container">
