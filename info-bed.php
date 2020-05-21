@@ -333,19 +333,19 @@
         <i class="fa fa-bars"></i>
       </button>
 
-      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #78909c;">
+      <button onclick="window.location.href='jadwal-dokter.php'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Jadwal Dokter" style="background-color: #78909c;">
         <i class="fa fa-calendar"></i>
       </button>
 
-      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #ffa726;">
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Pendaftaran" style="background-color: #ffa726;">
         <i class="fa fa-user-plus"></i>
       </button>
 
-      <button onclick="window.location.href='info-bed.php'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #8d6e63;">
+      <button onclick="window.location.href='info-bed.php'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Info Bed" style="background-color: #8d6e63;">
         <i class="fa fa-bed"></i>
       </button>
 
-      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Do" style="background-color: #f44336;">
+      <button type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Promo" style="background-color: #f44336;">
         <i class="fa fa-percent"></i>
       </button>
     </div>
@@ -357,16 +357,17 @@
         <i class="fa fa-whatsapp fa-lg"></i>
       </button>
 
-      <button onclick="window.location.href='https://wa.me/62370631999'" type="button" class="btn btn-sub btn-info has-tooltip" data-placement="left" title="Fullscreen" style="background-color: #26a69a  ;">
+      <button onclick="window.location.href='https://wa.me/62370631999'" type="button" class="btn btn-sub btn-info has-tooltip" data-placement="left" title="Telepon Kami" style="background-color: #26a69a  ;">
         <i class="fa fa-phone"><a href=""></a></i>
       </button>
 
-      <button onclick="window.location.href='https://wa.me/6281907007002'" type="button" class="btn btn-sub btn-danger has-tooltip" data-placement="left" title="Save" style="background-color: #42a5f5;">
+      <button onclick="window.location.href='https://wa.me/6281907007002'" type="button" class="btn btn-sub btn-danger has-tooltip" data-placement="left" title="Pendaftaran" style="background-color: #42a5f5;">
         <i class="fa fa-user-plus"></i>
       </button>
 
-      <button onclick="window.location.href='https://wa.me/6285932227018'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Download" style="background-color: #ef5350;">
+      <button onclick="window.location.href='https://wa.me/6285932227018'" type="button" class="btn btn-sub btn-warning has-tooltip" data-placement="left" title="Gawat Darurat" style="background-color: #ef5350;">
         <i class="fa fa-ambulance"></i>
+      </button>
       </button>
     </div>
   </div>
