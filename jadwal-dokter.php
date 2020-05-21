@@ -201,6 +201,207 @@
         </section>
         <section class="section section-sm bg-default">
             <div class="container">
+                <!-- Poli Kandungan -->
+                <?php
+                $poliKandungan = file_get_contents(
+                    'https://script.googleusercontent.com/macros/echo?user_content_key=wbeGWD2mkj_hIEqvkeJ6vcwT7mzUZwR4K46bKSX7hDR-XZJVJOQzuRXzk9WuuItbX6JK-Bf_3IrquhP5fD0WLesmIrzwhoism5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnD3pAH2cV_9gbzCTRPV9vvFsY-pZ6Nm6MHOsenJq5fJ459UfErsOqYcJrs6H7eBl1RdIug5zkO6q&lib=MnlrQit4ZpBgqIRj6O64USRxzlo5DDtxR'
+                );
+                $poliKandungan = json_decode($poliKandungan, true);
+                ?>
+                <h1>Poli Kandungan</h1>
+                <div class="accordion card-group-custom card-group-classic" id="accordion2">
+                    <!-- Praktik Spesialis Kandungan -->
+                    <article class="card card-custom card-corporate">
+                        <div class="card-header" role="tab">
+                            <div class="card-title">
+                                <a id="1" class="collapsed" data-toggle="collapse" data-parent="#accordion2" aria-controls="psk" href="#psk" aria-expanded="false" role="button">Praktik Spesialis Kandungan
+                                    <div class="card-arrow"></div></a>
+                            </div>
+                        </div>
+                        <div id="psk" class="collapse" aria-labelledby="1" data-parent="#accordion2">
+                            <div class="card-body table-responsive">
+                                <table class="table table-bordered table-striped table-custom-primary">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th>
+                                                <h5>Nama Dokter</h5>
+                                            </th>
+                                            <th colspan="2">
+                                                <h5>Senin</h5>
+                                            </th>
+                                            <th colspan="2">
+                                                <h5>Selasa</h5>
+                                            </th>
+                                            <th colspan="2">
+                                                <h5>Rabu</h5>
+                                            </th>
+                                            <th colspan="2">
+                                                <h5>Kamis</h5>
+                                            </th>
+                                            <th colspan="2">
+                                                <h5>Jumat</h5>
+                                            </th>
+                                            <th colspan="2">
+                                                <h5>Sabtu</h5>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="color-black">
+                                        <?php foreach ($poliKandungan["praktik_spesialis_kandungan"] as $value) { ?>
+                                            <tr>
+                                                <td scope="row">
+                                                    <strong><?= $value["dokter"] ?></strong>
+                                                </td>
+                                                <td>
+                                                    <?= $value["senin_1"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["senin_2"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["selasa_1"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["selasa_2"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["rabu_1"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["rabu_2"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["kamis_1"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["kamis_2"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["jumat_1"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["jumat_2"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["sabtu_1"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["sabtu_2"] ?>
+                                                </td>
+                                            </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Layanan USG -->
+                    <article class="card card-custom card-corporate">
+                        <div class="card-header" role="tab">
+                            <div class="card-title">
+                                <a id="2" class="collapsed" data-toggle="collapse" data-parent="#accordion2" aria-controls="lusg" href="#lusg" aria-expanded="false" role="button">Layanan USG
+                                    <div class="card-arrow"></div></a>
+                            </div>
+                        </div>
+                        <div id="lusg" class="collapse" aria-labelledby="2" data-parent="#accordion2">
+                            <div class="card-body table-responsive">
+                                <table class="table table-bordered table-striped table-custom-primary">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th>
+                                                <h5>Nama Dokter</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Senin</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Selasa</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Rabu</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Kamis</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Jumat</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Sabtu</h5>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="color-black">
+                                        <?php foreach ($poliKandungan["layanan_usg"] as $value) { ?>
+                                            <tr>
+                                                <td scope="row">
+                                                    <strong><?= $value["dokter"] ?></strong>
+                                                </td>
+                                                <td>
+                                                    <?= $value["senin"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["selasa"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["rabu"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["kamis"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["jumat"] ?>
+                                                </td>
+                                                <td>
+                                                    <?= $value["sabtu"] ?>
+                                                </td>
+                                            </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Sunday Clinic -->
+                    <article class="card card-custom card-corporate">
+                        <div class="card-header" role="tab">
+                            <div class="card-title">
+                                <a id="3" class="collapsed" data-toggle="collapse" data-parent="#accordion2" aria-controls="csk" href="#csk" aria-expanded="false" role="button">Sunday Clinic
+                                    <div class="card-arrow"></div></a>
+                            </div>
+                        </div>
+                        <div id="csk" class="collapse" aria-labelledby="3" data-parent="#accordion2">
+                            <div class="card-body table-responsive">
+                                <table class="table table-bordered table-striped table-custom-primary">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th>
+                                                <h5>Nama Dokter</h5>
+                                            </th>
+                                            <th>
+                                                <h5>Waktu</h5>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="color-black">
+                                        <?php foreach ($poliKandungan["sunday_clinic"] as $value) { ?>
+                                            <tr>
+                                                <td scope="row">
+                                                    <strong><?= $value["dokter"] ?></strong>
+                                                </td>
+                                                <td>
+                                                    <?= $value["waktu"] ?>
+                                                </td>
+                                            </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <hr><br><br>
+
                 <!-- Poli Anak -->
                 <?php
                 $poliAnak = file_get_contents(
@@ -408,206 +609,7 @@
                 </div>
                 <hr><br><br>
 
-                <!-- Poli Kandungan -->
-                <?php
-                $poliKandungan = file_get_contents(
-                    'https://script.googleusercontent.com/macros/echo?user_content_key=wbeGWD2mkj_hIEqvkeJ6vcwT7mzUZwR4K46bKSX7hDR-XZJVJOQzuRXzk9WuuItbX6JK-Bf_3IrquhP5fD0WLesmIrzwhoism5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnD3pAH2cV_9gbzCTRPV9vvFsY-pZ6Nm6MHOsenJq5fJ459UfErsOqYcJrs6H7eBl1RdIug5zkO6q&lib=MnlrQit4ZpBgqIRj6O64USRxzlo5DDtxR'
-                );
-                $poliKandungan = json_decode($poliKandungan, true);
-                ?>
-                <h1>Poli Kandungan</h1>
-                <div class="accordion card-group-custom card-group-classic" id="accordion2">
-                    <!-- Praktik Spesialis Kandungan -->
-                    <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                            <div class="card-title">
-                                <a id="1" class="collapsed" data-toggle="collapse" data-parent="#accordion2" aria-controls="psk" href="#psk" aria-expanded="false" role="button">Praktik Spesialis Kandungan
-                                    <div class="card-arrow"></div></a>
-                            </div>
-                        </div>
-                        <div id="psk" class="collapse" aria-labelledby="1" data-parent="#accordion2">
-                            <div class="card-body table-responsive">
-                                <table class="table table-bordered table-striped table-custom-primary">
-                                    <thead class="text-center">
-                                        <tr>
-                                            <th>
-                                                <h5>Nama Dokter</h5>
-                                            </th>
-                                            <th colspan="2">
-                                                <h5>Senin</h5>
-                                            </th>
-                                            <th colspan="2">
-                                                <h5>Selasa</h5>
-                                            </th>
-                                            <th colspan="2">
-                                                <h5>Rabu</h5>
-                                            </th>
-                                            <th colspan="2">
-                                                <h5>Kamis</h5>
-                                            </th>
-                                            <th colspan="2">
-                                                <h5>Jumat</h5>
-                                            </th>
-                                            <th colspan="2">
-                                                <h5>Sabtu</h5>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="color-black">
-                                        <?php foreach ($poliKandungan["praktik_spesialis_kandungan"] as $value) { ?>
-                                            <tr>
-                                                <td scope="row">
-                                                    <strong><?= $value["dokter"] ?></strong>
-                                                </td>
-                                                <td>
-                                                    <?= $value["senin_1"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["senin_2"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["selasa_1"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["selasa_2"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["rabu_1"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["rabu_2"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["kamis_1"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["kamis_2"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["jumat_1"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["jumat_2"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["sabtu_1"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["sabtu_2"] ?>
-                                                </td>
-                                            </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Layanan USG -->
-                    <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                            <div class="card-title">
-                                <a id="2" class="collapsed" data-toggle="collapse" data-parent="#accordion2" aria-controls="lusg" href="#lusg" aria-expanded="false" role="button">Layanan USG
-                                    <div class="card-arrow"></div></a>
-                            </div>
-                        </div>
-                        <div id="lusg" class="collapse" aria-labelledby="2" data-parent="#accordion2">
-                            <div class="card-body table-responsive">
-                                <table class="table table-bordered table-striped table-custom-primary">
-                                    <thead class="text-center">
-                                        <tr>
-                                            <th>
-                                                <h5>Nama Dokter</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Senin</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Selasa</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Rabu</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Kamis</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Jumat</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Sabtu</h5>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="color-black">
-                                        <?php foreach ($poliKandungan["layanan_usg"] as $value) { ?>
-                                            <tr>
-                                                <td scope="row">
-                                                    <strong><?= $value["dokter"] ?></strong>
-                                                </td>
-                                                <td>
-                                                    <?= $value["senin"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["selasa"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["rabu"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["kamis"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["jumat"] ?>
-                                                </td>
-                                                <td>
-                                                    <?= $value["sabtu"] ?>
-                                                </td>
-                                            </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Sunday Clinic -->
-                    <article class="card card-custom card-corporate">
-                        <div class="card-header" role="tab">
-                            <div class="card-title">
-                                <a id="3" class="collapsed" data-toggle="collapse" data-parent="#accordion2" aria-controls="csk" href="#csk" aria-expanded="false" role="button">Sunday Clinic
-                                    <div class="card-arrow"></div></a>
-                            </div>
-                        </div>
-                        <div id="csk" class="collapse" aria-labelledby="3" data-parent="#accordion2">
-                            <div class="card-body table-responsive">
-                                <table class="table table-bordered table-striped table-custom-primary">
-                                    <thead class="text-center">
-                                        <tr>
-                                            <th>
-                                                <h5>Nama Dokter</h5>
-                                            </th>
-                                            <th>
-                                                <h5>Waktu</h5>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="color-black">
-                                        <?php foreach ($poliKandungan["sunday_clinic"] as $value) { ?>
-                                            <tr>
-                                                <td scope="row">
-                                                    <strong><?= $value["dokter"] ?></strong>
-                                                </td>
-                                                <td>
-                                                    <?= $value["waktu"] ?>
-                                                </td>
-                                            </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <hr><br><br>
+                
 
                 <!-- Poli Lain -->
                 <?php
